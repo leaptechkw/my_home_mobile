@@ -3,6 +3,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:my_home/core/themes/app_colors.dart';
 import 'package:my_home/features/home/presentation/pages/home_screen.dart';
+import 'package:my_home/features/profile/presentation/pages/profile_screen.dart';
 import 'package:my_home/features/search/presentation/pages/search_screen.dart';
 
 class MainScaffold extends StatefulWidget {
@@ -19,14 +20,14 @@ class _MainScaffoldState extends State<MainScaffold> {
     const HomeScreen(),
     const SearchScreen(),
     const Center(child: Text('Cart')),
-    const Center(child: Text('Profile')),
+    const ProfileScreen(),
   ];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: AppColors.white,
+      // backgroundColor: AppColors.white,
       body: AnimatedSwitcher(
-        duration: const Duration(milliseconds: 300),
+        duration: const Duration(milliseconds: 500),
         child: _screens[_currentIndex],
       ),
       bottomNavigationBar: Container(

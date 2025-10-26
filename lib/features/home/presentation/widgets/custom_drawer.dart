@@ -42,10 +42,9 @@ class CustomDrawer extends StatelessWidget {
           Column(
             children: [
               _buildDrawerItem(
-                iconPath: 'assets/svgs/home.svg',
-                text: 'Home',
-                onTap: () => Navigator.pop(context),
-              ),
+                  iconPath: 'assets/svgs/ar.svg',
+                  text: 'Try virtual reality',
+                  onTap: () {}),
               _buildDrawerItem(
                 iconPath: 'assets/svgs/profile.svg',
                 text: 'Profile',
