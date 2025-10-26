@@ -4,6 +4,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:my_home/core/routing/app_router.dart';
 import 'package:my_home/core/services/shared_pref_service.dart';
 import 'package:my_home/core/themes/app_colors.dart';
+import 'package:toastification/toastification.dart';
 
 void main() {
   //ensure initialization
@@ -28,22 +29,24 @@ class MyHomeApp extends StatelessWidget {
     return ScreenUtilInit(
       designSize: const Size(375, 812),
       minTextAdapt: true,
-      child: MaterialApp.router(
-        routerConfig: AppRouter.router,
-        debugShowCheckedModeBanner: false,
-        useInheritedMediaQuery: true,
-        locale: DevicePreview.locale(context),
-        builder: DevicePreview.appBuilder,
-        theme: ThemeData(
-          drawerTheme: DrawerThemeData(
-            backgroundColor: AppColors.white,
+      child: ToastificationWrapper(
+        child: MaterialApp.router(
+          routerConfig: AppRouter.router,
+          debugShowCheckedModeBanner: false,
+          useInheritedMediaQuery: true,
+          locale: DevicePreview.locale(context),
+          builder: DevicePreview.appBuilder,
+          theme: ThemeData(
+            drawerTheme: DrawerThemeData(
+              backgroundColor: AppColors.white,
+            ),
+            appBarTheme: const AppBarTheme(
+              backgroundColor: AppColors.primaryColor,
+              elevation: 0,
+              foregroundColor: Colors.white,
+            ),
+            scaffoldBackgroundColor: Colors.grey.shade100,
           ),
-          appBarTheme: const AppBarTheme(
-            backgroundColor: AppColors.primaryColor,
-            elevation: 0,
-            foregroundColor: Colors.white,
-          ),
-          scaffoldBackgroundColor: Colors.grey.shade100,
         ),
       ),
     );

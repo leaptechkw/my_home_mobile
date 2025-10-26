@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:my_home/core/themes/app_colors.dart';
 import 'package:my_home/core/themes/app_text_styles.dart';
+import 'package:my_home/core/utils/my_toast.dart';
 import 'package:my_home/core/utils/spacing.dart';
 import 'package:my_home/core/widgets/app_button.dart';
 import 'package:my_home/core/widgets/square_button.dart';
@@ -173,7 +174,11 @@ class _ProductDetailsScreenState extends State<ProductDetailsScreen> {
                         child: AppButton(
                           buttonText: 'Add to cart',
                           backgroundColor: Color(0xff121212),
-                          onPressed: () {},
+                          onPressed: () {
+                            MyToast.success(context, 'Added to Cart',
+                                description:
+                                    'This item has been added to your cart.');
+                          },
                         ),
                       ),
                     ],

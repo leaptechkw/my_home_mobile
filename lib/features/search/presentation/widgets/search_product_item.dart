@@ -4,6 +4,7 @@ import 'package:flutter_svg/svg.dart';
 import 'package:go_router/go_router.dart';
 import 'package:my_home/core/themes/app_colors.dart';
 import 'package:my_home/core/themes/app_text_styles.dart';
+import 'package:my_home/core/utils/my_toast.dart';
 
 class SearchProductItem extends StatelessWidget {
   const SearchProductItem({
@@ -63,7 +64,10 @@ class SearchProductItem extends StatelessWidget {
               height: 20.h,
             ),
             color: AppColors.primaryColor,
-            onPressed: () {},
+            onPressed: () {
+              MyToast.success(context, 'added to cart ',
+                  description: 'This item has been added to your cart.');
+            },
           ),
         ),
         onTap: () {

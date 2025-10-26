@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:my_home/core/themes/app_text_styles.dart';
 import 'package:my_home/core/utils/spacing.dart';
+import 'package:my_home/features/home/presentation/widgets/custom_drawer.dart';
 import 'package:my_home/features/home/presentation/widgets/home_app_bar.dart';
 import 'package:my_home/features/home/presentation/widgets/home_category_list_view.dart';
 import 'package:my_home/features/home/presentation/widgets/home_category_row.dart';
@@ -14,6 +15,7 @@ class HomeScreenBody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      drawer: CustomDrawer(),
       body: SingleChildScrollView(
         padding: const EdgeInsets.all(8.0),
         child: Column(
