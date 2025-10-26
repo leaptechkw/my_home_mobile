@@ -53,6 +53,12 @@ class AppTextStyles {
     fontWeight: FontWeight.w500,
     color: AppColors.black,
   );
+  //font14GreyRegular
+  static TextStyle font14GreyRegular = TextStyle(
+    fontSize: 14.sp,
+    fontWeight: FontWeight.w500,
+    color: Colors.grey,
+  );
   //font11BlackMedium
   static TextStyle font11BlackMedium = TextStyle(
     fontSize: 11.sp,

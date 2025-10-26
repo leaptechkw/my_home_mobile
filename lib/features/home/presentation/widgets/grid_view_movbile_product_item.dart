@@ -62,16 +62,21 @@ class GridViewMobilePrdouctItem extends StatelessWidget {
           Positioned(
             top: 10.h,
             right: 20.w,
-            child: Container(
-              padding: EdgeInsets.all(6.w),
-              decoration: BoxDecoration(
-                color: Colors.white,
-                shape: BoxShape.circle,
-              ),
-              child: Icon(
-                Icons.favorite_border,
-                size: 16.w,
-                color: AppColors.primaryColor,
+            child: GestureDetector(
+              onTap: () {
+                // Handle favorite button tap
+              },
+              child: Container(
+                padding: EdgeInsets.all(6.w),
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  shape: BoxShape.circle,
+                ),
+                child: Icon(
+                  Icons.favorite_border,
+                  size: 16.w,
+                  color: AppColors.primaryColor,
+                ),
               ),
             ),
           ),

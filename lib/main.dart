@@ -12,7 +12,6 @@ void main() {
   ScreenUtil.ensureScreenSize();
   //shared pref init
   SharedPreferencesService().init();
-
   runApp(
     DevicePreview(
       enabled: false,

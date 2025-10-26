@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:my_home/features/auth/presentation/pages/login_screen.dart';
 import 'package:my_home/features/auth/presentation/pages/sign_up_screen.dart';
+import 'package:my_home/features/home/presentation/pages/product_details_screen.dart';
 import 'package:my_home/features/onboarding/presentation/pages/on_boarding_screen.dart';
 import 'package:my_home/features/splash/presentation/pages/splash_screen.dart';
 import 'package:my_home/main_scaffold.dart';
@@ -12,7 +13,7 @@ class AppRouter {
     routes: [
       GoRoute(
         path: '/',
-        builder: (context, state) => const SplashScreen(),
+        builder: (context, state) => const MainScaffold(),
       ),
       GoRoute(
         path: '/onBoarding',
@@ -29,6 +30,10 @@ class AppRouter {
       GoRoute(
         path: '/mainScaffold',
         builder: (context, state) => const MainScaffold(),
+      ),
+      GoRoute(
+        path: '/productDetailsScreen',
+        builder: (context, state) => const ProductDetailsScreen(),
       ),
     ],
     errorBuilder: (context, state) =>
