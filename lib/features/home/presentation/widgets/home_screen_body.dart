@@ -14,38 +14,35 @@ class HomeScreenBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      drawer: CustomDrawer(),
-      body: SingleChildScrollView(
-        padding: const EdgeInsets.all(8.0),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            const HomeAppBar(),
-            verticalSpace(20),
-            const HomeIntroContainer(),
-            verticalSpace(10),
+    return SingleChildScrollView(
+      padding: const EdgeInsets.all(8.0),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          const HomeAppBar(),
+          verticalSpace(20),
+          const HomeIntroContainer(),
+          verticalSpace(10),
 
-            /// Categories
-            HomeCategoryRow(
-              title: 'Categories',
-              onSeeAllTap: () {},
-            ),
-            verticalSpace(10),
-            const HomeCategoryListView(),
-            verticalSpace(10),
+          /// Categories
+          HomeCategoryRow(
+            title: 'Categories',
+            onSeeAllTap: () {},
+          ),
+          verticalSpace(10),
+          const HomeCategoryListView(),
+          verticalSpace(10),
 
-            /// Popular Section
-            HomeCategoryRow(
-              title: 'Popular',
-              onSeeAllTap: () {},
-            ),
-            verticalSpace(20),
+          /// Popular Section
+          HomeCategoryRow(
+            title: 'Popular',
+            onSeeAllTap: () {},
+          ),
+          verticalSpace(20),
 
-            /// Grid
-            HomeGridViewBuilder(),
-          ],
-        ),
+          /// Grid
+          HomeGridViewBuilder(),
+        ],
       ),
     );
   }
