@@ -21,7 +21,7 @@ class GridViewMobilePrdouctItem extends StatelessWidget {
             left: 0,
             right: 0,
             child: Container(
-              padding: EdgeInsets.symmetric(horizontal: 12.w, vertical: 8.h),
+              padding: EdgeInsets.symmetric(horizontal: 12.w, vertical: 2.h),
               height: 150,
               width: 157.w,
               decoration: BoxDecoration(
@@ -36,7 +36,7 @@ class GridViewMobilePrdouctItem extends StatelessWidget {
                       style: AppTextStyles.font14BlackRegular.copyWith(
                         color: Colors.black54,
                       )),
-                  verticalSpace(4),
+                  verticalSpace(2),
                   Text('\$99.99', style: AppTextStyles.font14BlackRegular),
                   verticalSpace(12),
                 ],

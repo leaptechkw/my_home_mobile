@@ -139,6 +139,11 @@ class _ProductDetailsScreenState extends State<ProductDetailsScreen> {
                   verticalSpace(20),
                   Expanded(
                     child: PageView(
+                      onPageChanged: (index) {
+                        setState(() {
+                          currentPageIndex = index;
+                        });
+                      },
                       controller: pageController,
                       children: [
                         Text(

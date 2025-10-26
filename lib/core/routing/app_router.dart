@@ -13,7 +13,7 @@ class AppRouter {
     routes: [
       GoRoute(
         path: '/',
-        builder: (context, state) => const MainScaffold(),
+        builder: (context, state) => const SplashScreen(),
       ),
       GoRoute(
         path: '/onBoarding',
