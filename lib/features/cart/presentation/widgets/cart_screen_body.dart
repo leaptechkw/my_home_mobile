@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_slidable/flutter_slidable.dart';
+import 'package:go_router/go_router.dart';
 import 'package:my_home/core/utils/spacing.dart';
 import 'package:my_home/features/cart/presentation/widgets/cart_product_item.dart';
 
@@ -42,7 +43,12 @@ class CartScreenBody extends StatelessWidget {
                         ),
                       ],
                     ),
-                    child: CartProductItem(),
+                    child: GestureDetector(
+                      onTap: () {
+                        context.push('/productDetailsScreen');
+                      },
+                      child: CartProductItem(),
+                    ),
                   );
                 },
               ),
