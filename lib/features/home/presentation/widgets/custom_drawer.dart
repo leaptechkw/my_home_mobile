@@ -21,7 +21,7 @@ class CustomDrawer extends StatelessWidget {
             ),
             currentAccountPicture: CircleAvatar(
               radius: 40,
-              backgroundImage: const CachedNetworkImageProvider(
+              backgroundImage: CachedNetworkImageProvider(
                 'https://t3.ftcdn.net/jpg/02/99/04/20/360_F_299042079_vGBD7wIlSeNl7vOevWHiL93G4koMM967.jpg',
               ),
             ),

@@ -20,10 +20,7 @@ android {
     }
 
     defaultConfig {
-        // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
         applicationId = "com.example.my_home"
-        // You can update the following values to match your application needs.
-        // For more information, see: https://flutter.dev/to/review-gradle-config.
         minSdk = flutter.minSdkVersion
         targetSdk = flutter.targetSdkVersion
         versionCode = flutter.versionCode
@@ -32,9 +29,23 @@ android {
 
     buildTypes {
         release {
-            // TODO: Add your own signing config for the release build.
-            // Signing with the debug keys for now, so `flutter run --release` works.
-            signingConfig = signingConfigs.getByName("debug")
+            signingConfig = signingConfigs.getByName("debug") // replace with release key later
+        }
+    }
+
+    flavorDimensions += listOf("default")
+
+    productFlavors {
+        create("development") {
+            dimension = "default"
+            //app_ame is the same for all flavors, just chagne the come after 
+            resValue("string", "app_name", "myHome dev")
+            applicationIdSuffix = ".dev"
+            versionNameSuffix = "-dev"
+        }
+        create("production") {
+            dimension = "default"
+            resValue("string", "app_name", "myHome prod")
         }
     }
 }

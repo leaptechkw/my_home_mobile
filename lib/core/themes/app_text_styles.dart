@@ -89,4 +89,10 @@ class AppTextStyles {
     fontWeight: FontWeight.w500,
     color: AppColors.white,
   );
+  //font12BlackRegular
+  static TextStyle font12BlackRegular = TextStyle(
+    fontSize: 12.sp,
+    fontWeight: FontWeight.w500,
+    color: AppColors.black,
+  );
 }

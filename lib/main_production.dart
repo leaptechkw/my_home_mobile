@@ -4,21 +4,23 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:my_home/core/routing/app_router.dart';
 import 'package:my_home/core/services/shared_pref_service.dart';
 import 'package:my_home/core/themes/app_colors.dart';
+import 'package:my_home/main_development.dart';
 import 'package:my_home/my_home_app.dart';
 import 'package:toastification/toastification.dart';
 
-void main() {
+void main() async {
+  print('production');
   //ensure initialization
   WidgetsFlutterBinding.ensureInitialized();
-  //initialize screenutil
-  ScreenUtil.ensureScreenSize();
+  //initialize screenutil and fix fonts be hidden in production mode
+  await ScreenUtil.ensureScreenSize();
   //shared pref init
   SharedPreferencesService().init();
   runApp(
     DevicePreview(
       enabled: false,
       builder: (context) => MyHomeApp(
-        isDevelopment: true,
+        isDevelopment: false,
       ),
     ),
   );

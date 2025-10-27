@@ -7,11 +7,12 @@ import 'package:my_home/core/themes/app_colors.dart';
 import 'package:my_home/my_home_app.dart';
 import 'package:toastification/toastification.dart';
 
-void main() {
+void main() async {
+  print('development');
   //ensure initialization
   WidgetsFlutterBinding.ensureInitialized();
   //initialize screenutil
-  ScreenUtil.ensureScreenSize();
+  await ScreenUtil.ensureScreenSize();
   //shared pref init
   SharedPreferencesService().init();
   runApp(
