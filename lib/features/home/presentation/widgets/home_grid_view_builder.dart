@@ -23,10 +23,11 @@ class HomeGridViewBuilder extends StatelessWidget {
       ),
       itemBuilder: (context, index) {
         return GestureDetector(
-            onTap: () {
-              context.push('/productDetailsScreen');
-            },
-            child: GridViewProductLayout());
+          onTap: () {
+            context.push('/productDetailsScreen');
+          },
+          child: GridViewProductLayout(),
+        );
       },
     );
   }
