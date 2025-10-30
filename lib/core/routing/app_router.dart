@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
+import 'package:my_home/features/ai/presentation/pages/ai_chat_screen.dart';
 import 'package:my_home/features/auth/presentation/pages/login_screen.dart';
 import 'package:my_home/features/auth/presentation/pages/sign_up_screen.dart';
 import 'package:my_home/features/cart/presentation/pages/cart_screen.dart';
@@ -44,6 +45,10 @@ class AppRouter {
       GoRoute(
         path: '/categoriesScreen',
         builder: (context, state) => const CategoriesScreen(),
+      ),
+      GoRoute(
+        path: '/aiChatScreen',
+        builder: (context, state) => const AiChatScreen(),
       ),
     ],
     errorBuilder: (context, state) =>

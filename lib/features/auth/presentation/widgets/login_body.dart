@@ -33,7 +33,7 @@ class _LoginBodyState extends State<LoginBody> {
             child: Image.asset(
               'assets/images/onBoarding1.jpg',
               fit: BoxFit.cover,
-              color: Colors.black.withOpacity(0.4),
+              color: Colors.black.withOpacity(0.6),
               colorBlendMode: BlendMode.darken,
             ),
           ),
@@ -149,7 +149,7 @@ class _LoginBodyState extends State<LoginBody> {
                         context.pushReplacement('/mainScaffold');
                       },
                       child: Text(
-                        'login as guest',
+                        'Sign in as guest',
                         style: AppTextStyles.font16WhiteBold,
                       ),
                     ),

@@ -15,8 +15,8 @@ class LoginAnimatedLogo extends StatelessWidget {
         MoveEffect(
           begin: const Offset(0, 0), // start in center
           end: Offset(0, -180.h), // move slightly up
-          duration: const Duration(seconds: 2),
-          curve: Curves.easeInOut,
+          duration: const Duration(seconds: 3),
+          curve: Curves.easeOutSine,
         ),
         ScaleEffect(
           begin: const Offset(1.3, 1.3),
@@ -27,8 +27,8 @@ class LoginAnimatedLogo extends StatelessWidget {
       ],
       child: Image.asset(
         'assets/images/logo.png',
-        width: 200.w,
-        height: 200.h,
+        width: 150.w,
+        height: 150.h,
         color: AppColors.white,
       ),
     );

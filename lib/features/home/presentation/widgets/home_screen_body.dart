@@ -111,7 +111,7 @@ class _HomeScreenBodyState extends State<HomeScreenBody> {
           ? FloatingActionButton.extended(
               backgroundColor: AppColors.primaryColor,
               onPressed: () {
-                // يمكنك فتح شاشة المساعدة أو الحوار هنا
+                context.push('/aiChatScreen');
               },
               label: Row(
                 children: [

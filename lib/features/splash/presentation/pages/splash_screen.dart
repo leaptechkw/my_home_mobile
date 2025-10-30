@@ -52,8 +52,8 @@ class _SplashScreenState extends State<SplashScreen> {
             // fade logo
             Image.asset(
               'assets/images/logo.png',
-              width: 200.w,
-              height: 200.h,
+              width: 400.w,
+              height: 400.h,
               color: AppColors.white,
             ).animate().fade(
                   duration: 2.seconds,
