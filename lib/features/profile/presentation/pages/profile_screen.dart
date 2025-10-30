@@ -18,7 +18,6 @@ class ProfileScreen extends StatelessWidget {
           style: AppTextStyles.font20BlackBold,
         ),
       ),
-      backgroundColor: Colors.grey[100],
       body: SafeArea(
         child: SingleChildScrollView(
           padding: const EdgeInsets.all(16),
@@ -51,7 +50,7 @@ class ProfileScreen extends StatelessWidget {
                     ),
                     const SizedBox(height: 12),
                     const Text(
-                      'John Doe',
+                      'sabri',
                       style: TextStyle(
                         fontSize: 20,
                         fontWeight: FontWeight.bold,
@@ -59,7 +58,7 @@ class ProfileScreen extends StatelessWidget {
                     ),
                     const SizedBox(height: 4),
                     Text(
-                      'john.doe@email.com',
+                      'sabri@gmail.com',
                       style: TextStyle(
                         color: Colors.grey[600],
                         fontSize: 14,
@@ -84,12 +83,12 @@ class ProfileScreen extends StatelessWidget {
               _buildInfoCard(
                 icon: Icons.phone,
                 label: 'Phone Number',
-                value: '+20 100 123 4567',
+                value: '+965 2222 0000',
               ),
               _buildInfoCard(
                 icon: Icons.location_on_outlined,
                 label: 'Address',
-                value: 'Cairo, Egypt',
+                value: 'kuwait',
               ),
               _buildInfoCard(
                 icon: Icons.calendar_today_outlined,
@@ -101,9 +100,7 @@ class ProfileScreen extends StatelessWidget {
                 label: 'Gender',
                 value: 'Male',
               ),
-
               const SizedBox(height: 24),
-
               // ---- Logout Button ----
               AppButton(
                 buttonText: 'Log out',

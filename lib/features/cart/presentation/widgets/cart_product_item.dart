@@ -73,7 +73,7 @@ class CartProductItem extends StatelessWidget {
                       onTap: () {},
                     ),
                     Text(
-                      '\$99.99',
+                      '99.99 KD',
                       style: AppTextStyles.font14BlackRegular.copyWith(
                         color: AppColors.primaryColor,
                       ),

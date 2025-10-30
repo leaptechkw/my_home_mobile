@@ -29,7 +29,7 @@ class LoginAnimatedLogo extends StatelessWidget {
         'assets/images/logo.png',
         width: 200.w,
         height: 200.h,
-        color: AppColors.primaryColor,
+        color: AppColors.white,
       ),
     );
   }

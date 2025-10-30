@@ -3,6 +3,7 @@ import 'package:go_router/go_router.dart';
 import 'package:my_home/features/auth/presentation/pages/login_screen.dart';
 import 'package:my_home/features/auth/presentation/pages/sign_up_screen.dart';
 import 'package:my_home/features/cart/presentation/pages/cart_screen.dart';
+import 'package:my_home/features/categories/presentation/pages/categories_screen.dart';
 import 'package:my_home/features/home/presentation/pages/product_details_screen.dart';
 import 'package:my_home/features/onboarding/presentation/pages/on_boarding_screen.dart';
 import 'package:my_home/features/splash/presentation/pages/splash_screen.dart';
@@ -14,7 +15,7 @@ class AppRouter {
     routes: [
       GoRoute(
         path: '/',
-        builder: (context, state) => const MainScaffold(),
+        builder: (context, state) => const SplashScreen(),
       ),
       GoRoute(
         path: '/onBoarding',
@@ -24,10 +25,10 @@ class AppRouter {
         path: '/login',
         builder: (context, state) => const LoginScreen(),
       ),
-      GoRoute(
-        path: '/signUp',
-        builder: (context, state) => const SignUpScreen(),
-      ),
+      // GoRoute(
+      //   path: '/signUp',
+      //   builder: (context, state) => const SignUpScreen(),
+      // ),
       GoRoute(
         path: '/mainScaffold',
         builder: (context, state) => const MainScaffold(),
@@ -39,6 +40,10 @@ class AppRouter {
       GoRoute(
         path: '/cartScreen',
         builder: (context, state) => const CartScreen(),
+      ),
+      GoRoute(
+        path: '/categoriesScreen',
+        builder: (context, state) => const CategoriesScreen(),
       ),
     ],
     errorBuilder: (context, state) =>

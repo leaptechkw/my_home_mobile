@@ -4,14 +4,24 @@ import 'package:my_home/core/themes/app_colors.dart';
 import 'package:my_home/core/themes/app_text_styles.dart';
 
 class HomeCategoryListView extends StatelessWidget {
-  const HomeCategoryListView({super.key});
+  HomeCategoryListView({super.key});
+
+  // Dummy category list
+  final List<Map<String, String>> dummyList = [
+    {'name': 'Chairs', 'image': 'assets/images/chair.png'},
+    {'name': 'Sofas', 'image': 'assets/images/sofa.png'},
+    {'name': 'Beds', 'image': 'assets/images/bed.png'},
+  ];
 
   @override
   Widget build(BuildContext context) {
     return SizedBox(
       height: 60.h,
       child: ListView.builder(
+        scrollDirection: Axis.horizontal,
+        itemCount: dummyList.length,
         itemBuilder: (context, index) {
+          final item = dummyList[index];
           return Padding(
             padding: EdgeInsets.only(right: 10.w),
             child: Container(
@@ -25,21 +35,21 @@ class HomeCategoryListView extends StatelessWidget {
               child: Row(
                 children: [
                   Text(
-                    'Chairs',
+                    item['name']!,
                     style: AppTextStyles.font14WhiteMedium,
                   ),
-                  Expanded(
-                    child: Image.asset(
-                      'assets/images/chair.png',
-                    ),
+                  const Spacer(),
+                  Image.asset(
+                    item['image']!,
+                    width: 50.w,
+                    height: 50.h,
+                    fit: BoxFit.contain,
                   ),
                 ],
               ),
             ),
           );
         },
-        scrollDirection: Axis.horizontal,
-        itemCount: 10,
       ),
     );
   }

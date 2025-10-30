@@ -19,22 +19,22 @@ class _SearchScreenState extends State<SearchScreen> {
   final List<Map<String, dynamic>> dummyProducts = [
     {
       'name': 'Wooden Chair',
-      'price': '\$49.99',
+      'price': '49.99 KD',
       'image': 'assets/images/test.png',
     },
     {
       'name': 'Modern Sofa',
-      'price': '\$199.99',
+      'price': '199.99 KD',
       'image': 'assets/images/test.png',
     },
     {
       'name': 'Office Desk',
-      'price': '\$129.99',
+      'price': '29.99 KD',
       'image': 'assets/images/test.png',
     },
     {
       'name': 'Lamp Stand',
-      'price': '\$39.99',
+      'price': '39.99 KD',
       'image': 'assets/images/test.png',
     },
   ];

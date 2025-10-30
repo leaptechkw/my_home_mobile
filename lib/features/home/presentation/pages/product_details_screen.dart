@@ -79,7 +79,7 @@ class _ProductDetailsScreenState extends State<ProductDetailsScreen> {
                   Row(
                     children: [
                       Text(
-                        '\$99.99',
+                        '99.99 KD',
                         style: AppTextStyles.font20BlackSemiBold
                             .copyWith(color: AppColors.primaryColor),
                       ),

@@ -26,14 +26,14 @@ class CustomDrawer extends StatelessWidget {
               ),
             ),
             accountName: const Text(
-              'John Doe',
+              'Tony mikhael',
               style: TextStyle(
                 fontWeight: FontWeight.bold,
                 fontSize: 18,
               ),
             ),
             accountEmail: const Text(
-              'john.doe@email.com',
+              'tony@gmail.com',
               style: TextStyle(fontSize: 14),
             ),
           ),
@@ -42,9 +42,10 @@ class CustomDrawer extends StatelessWidget {
           Column(
             children: [
               _buildDrawerItem(
-                  iconPath: 'assets/svgs/ar.svg',
-                  text: 'Try virtual reality',
-                  onTap: () {}),
+                iconPath: 'assets/svgs/ar.svg',
+                text: 'Try virtual reality',
+                onTap: () {},
+              ),
               _buildDrawerItem(
                 iconPath: 'assets/svgs/profile.svg',
                 text: 'Profile',

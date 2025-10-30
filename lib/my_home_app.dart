@@ -22,18 +22,19 @@ class MyHomeApp extends StatelessWidget {
           locale: DevicePreview.locale(context),
           builder: DevicePreview.appBuilder,
           theme: ThemeData(
-              drawerTheme: DrawerThemeData(
-                backgroundColor: AppColors.white,
-              ),
-              appBarTheme: AppBarTheme(
-                elevation: 0,
-                foregroundColor: Colors.white,
-                backgroundColor: Colors.grey.shade100,
-              ),
-              scaffoldBackgroundColor: Colors.grey.shade100,
-              bottomNavigationBarTheme: BottomNavigationBarThemeData(
-                backgroundColor: Colors.grey.shade100,
-              )),
+            drawerTheme: DrawerThemeData(
+              backgroundColor: AppColors.white,
+            ),
+            appBarTheme: AppBarTheme(
+              elevation: 0,
+              surfaceTintColor: Colors.grey.shade100,
+              backgroundColor: Colors.grey.shade100,
+            ),
+            scaffoldBackgroundColor: Colors.grey.shade100,
+            bottomNavigationBarTheme: BottomNavigationBarThemeData(
+              backgroundColor: Colors.grey.shade100,
+            ),
+          ),
         ),
       ),
     );

@@ -25,7 +25,7 @@ class CartBottomNavigationBar extends StatelessWidget {
                 children: [
                   Text('Total:', style: AppTextStyles.font14BlackRegular),
                   Text(
-                    '\$99.9',
+                    '600 KD',
                     style: AppTextStyles.font114BlackMedium
                         .copyWith(color: AppColors.primaryColor),
                   ),

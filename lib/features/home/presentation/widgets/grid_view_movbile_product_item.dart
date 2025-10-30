@@ -37,7 +37,7 @@ class GridViewMobilePrdouctItem extends StatelessWidget {
                         color: Colors.black54,
                       )),
                   verticalSpace(2),
-                  Text('\$99.99', style: AppTextStyles.font14BlackRegular),
+                  Text('99.99 KD', style: AppTextStyles.font14BlackRegular),
                   verticalSpace(12),
                 ],
               ),
@@ -51,7 +51,7 @@ class GridViewMobilePrdouctItem extends StatelessWidget {
             child: ClipRRect(
               borderRadius: BorderRadius.circular(16.r),
               child: Image.asset(
-                'assets/images/test.png',
+                'assets/images/test2.png',
                 width: 157.w,
                 fit: BoxFit.fitWidth,
                 height: 150.h,
@@ -60,8 +60,8 @@ class GridViewMobilePrdouctItem extends StatelessWidget {
           ),
           // ❤️ favourite icon
           Positioned(
-            top: 10.h,
-            right: 20.w,
+            top: 15.w,
+            right: 15.w,
             child: GestureDetector(
               onTap: () {
                 // Handle favorite button tap

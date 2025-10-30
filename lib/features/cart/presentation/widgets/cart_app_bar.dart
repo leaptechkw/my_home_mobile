@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:my_home/core/themes/app_text_styles.dart';
+import 'package:my_home/core/widgets/square_button.dart';
 
 class CartAppBar extends StatelessWidget {
   const CartAppBar({
@@ -27,9 +28,11 @@ class CartAppBar extends StatelessWidget {
               'Cart',
               style: AppTextStyles.font20BlackBold,
             ),
-            Icon(
-              Icons.delete,
-              size: 28.sp,
+            SquareButton(
+              icon: Icons.delete,
+              onTap: () {},
+              isSelected: true,
+              selectedColor: Colors.black,
             ),
           ],
         ),

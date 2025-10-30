@@ -53,7 +53,7 @@ class GridViewTabletProductItem extends StatelessWidget {
             child: ClipRRect(
               borderRadius: BorderRadius.circular(18.r),
               child: Image.asset(
-                'assets/images/test.png',
+                'assets/images/test2.png',
                 width: 200.w,
                 fit: BoxFit.fitWidth,
                 height: 180.h,
